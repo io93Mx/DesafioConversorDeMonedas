@@ -4,7 +4,7 @@
 
 <h3>Este es un conversor de monedas con una API, del curso de alura</h3> <a href="">Jugar</a><br><br>
 
-<em>De que trata:<em><br><br>Trata de que escojas una moneda (Euro, Peso Mexicano o Yen Chino) y sepas a cuantos Dolares es igual en ese diaa.<br><br>Asi sabras a como esta el tipo de cambio de la moneda seleccionada al dia que lo consultes.<br><br>Y listo, eso es todo. 
+<em>De que trata:<em><br><br>Trata de que escojas una moneda (Peso Mexicano, Real de Brasil o Yen Chino) y sepas a cuantos Dolares es igual la moneda que elegiste en ese dia.<br><br>Asi sabras a como esta el tipo de cambio de la moneda seleccionada al dia que lo consultes.<br><br>Y listo, eso es todo. 
 
 <h3> Insignias </h3>
 <em align="left">
@@ -52,9 +52,11 @@
 <h3> Tecnologías utilizadas </h3>
 
 <em align="center">
-   <img src="https://img.shields.io/badge/BUILT%20IN-Java%20API%20-red">
-   </em>
-
+   <img src="https://img.shields.io/badge/BUILT%20IN-Java-red">
+   </em><br>
+<em align="center">
+   <img src="https://img.shields.io/badge/BUILT%20IN-With%20API%20-orange">
+   </em><br>
 <h3> Desarrolladores del Proyecto y Personas Contribuyentes </h3>
 
 <a href="https://github.com/io93Mx">io93Mx</a><br>
