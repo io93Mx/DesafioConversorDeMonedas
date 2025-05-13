@@ -2,8 +2,10 @@
 
 <h1 align='center'>Conversor de monedas de alura</h1>
 
-<h3>Este es un conversor de monedas con una API, del curso de alura</h3> <a href="">Jugar</a><br><br>
-
+<h3>Este es un conversor de monedas con una API, del curso de alura</h3>
+<!--
+<a href="">Jugar</a><br><br>
+-->
 <em>De que trata:<em><br><br>Trata de que escojas una moneda (Peso Mexicano, Real de Brasil o Yen Chino) y sepas a cuantos Dolares es igual la moneda que elegiste en ese dia.<br><br>Asi sabras a como esta el tipo de cambio de la moneda seleccionada al dia que lo consultes.<br><br>Y listo, eso es todo. 
 
 <h3> Insignias </h3>
