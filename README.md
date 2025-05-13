@@ -6,7 +6,7 @@
 <!--
 <a href="">Jugar</a><br><br>
 -->
-<em>De que trata:<em><br><br>Trata de que escojas una moneda (Peso Mexicano, Real de Brasil o Yen Chino) y sepas a cuantos Dolares es igual la moneda que elegiste en ese dia.<br><br>Asi sabras a como esta el tipo de cambio de la moneda seleccionada al dia que lo consultes.<br><br>Y listo, eso es todo. 
+<em>De que trata:<em><br><br>Trata de que escojas una moneda (Dolar, Peso Mexicano, Real de Brasil o Yen Chino) para saber el tipo de cambio entre las monedas seleccionadas, y todo en tiempo real, con informacion de ese mismo dia.<br><br>Así sabrás csi te conviene coimprar o vender alguna moneda.<br><br>Y listo, eso es todo. 
 
 <h3> Insignias </h3>
 <em align="left">
@@ -59,6 +59,7 @@
 <em align="center">
    <img src="https://img.shields.io/badge/BUILT%20IN-With%20API%20-orange">
    </em><br>
+   
 <h3> Desarrolladores del Proyecto y Personas Contribuyentes </h3>
 
 <a href="https://github.com/io93Mx">io93Mx</a><br>
