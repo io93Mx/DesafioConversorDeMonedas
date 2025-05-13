@@ -28,12 +28,12 @@ public class Principal {
             
             System.out.println("***************************************\n");
             System.out.println("Bienvenid@ al conversor de monedas");
-            System.out.println("1) Dolar a Peso Mexicano");
-            System.out.println("2) Peso Mexicano a Dolar");
-            System.out.println("3) Dolar a Real Brasileño");
-            System.out.println("4) Real Brasileño a Dolar");
-            System.out.println("5) Dolar a Yuan Chino");
-            System.out.println("6) Yuan Chino a Dolar");
+            System.out.println("1) Dolar (USD) a Peso Mexicano (MXN)");
+            System.out.println("2) Peso Mexicano (MXN) a Dolar (USD)");
+            System.out.println("3) Dolar (USD) a Real Brasileño (BRL)");
+            System.out.println("4) Real Brasileño (BRL) a Dolar (USD)");
+            System.out.println("5) Dolar (USD) a Yuan Chino (CNY)");
+            System.out.println("6) Yuan Chino (CNY) a Dolar (USD)");
             System.out.println("7) Salir");
             System.out.println("\nElija una opcion valida");
             System.out.println("\n*************************************\n");
@@ -51,9 +51,9 @@ public class Principal {
                 String json = response.body();
                 //System.out.println("Response: " + json);
                 Gson gson = new Gson();                
-                gson.fromJson(json, Moneda.class);// //el json es response.body  
+                gson.fromJson(json, Moneda.class);  
                 Moneda miMoneda = gson.fromJson(json, Moneda.class);
-                System.out.println("Al tipo de cambio de hoy, son: " + miMoneda.getTotal());     
+                System.out.println("Al tipo de cambio de hoy: " + miMoneda.getFecha()+ " son: " + miMoneda.getTotal() + " " + monedaPesoMexicano);  
                 
             } else if (opcion == 2) {
 
@@ -64,7 +64,11 @@ public class Principal {
                 HttpRequest request = HttpRequest.newBuilder().uri(URI.create(direccion)).build();
                 HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
                 String json = response.body();
-                System.out.println("Response: " + json);
+                //System.out.println("Response: " + json);
+                Gson gson = new Gson();                
+                gson.fromJson(json, Moneda.class);  
+                Moneda miMoneda = gson.fromJson(json, Moneda.class);
+                System.out.println("Al tipo de cambio de hoy: " + miMoneda.getFecha()+ " son: " + miMoneda.getTotal() + " " + monedaDolar); 
 
             } else if (opcion == 3) {
 
@@ -75,8 +79,12 @@ public class Principal {
                 HttpRequest request = HttpRequest.newBuilder().uri(URI.create(direccion)).build();
                 HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
                 String json = response.body();
-                System.out.println("Response: " + json);
-                
+                //System.out.println("Response: " + json);
+                Gson gson = new Gson();                
+                gson.fromJson(json, Moneda.class);  
+                Moneda miMoneda = gson.fromJson(json, Moneda.class);
+                System.out.println("Al tipo de cambio de hoy: " + miMoneda.getFecha()+ " son: " + miMoneda.getTotal() + " " + monedaRealBrasil); 
+
             } else if (opcion == 4) {
 
                 System.out.println("Cuantos 'Reales de Brasil' quieres cambiar a 'Dolares' ?");
@@ -86,7 +94,11 @@ public class Principal {
                 HttpRequest request = HttpRequest.newBuilder().uri(URI.create(direccion)).build();
                 HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
                 String json = response.body();
-                System.out.println("Response: " + json);
+                //System.out.println("Response: " + json);
+                Gson gson = new Gson();                
+                gson.fromJson(json, Moneda.class);  
+                Moneda miMoneda = gson.fromJson(json, Moneda.class);
+                System.out.println("Al tipo de cambio de hoy: " + miMoneda.getFecha()+ " son: " + miMoneda.getTotal() + " " + monedaDolar); 
                 
             } else if (opcion == 5) {
 
@@ -97,7 +109,11 @@ public class Principal {
                 HttpRequest request = HttpRequest.newBuilder().uri(URI.create(direccion)).build();
                 HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
                 String json = response.body();
-                System.out.println("Response: " + json);
+                //System.out.println("Response: " + json);
+                Gson gson = new Gson();                
+                gson.fromJson(json, Moneda.class);  
+                Moneda miMoneda = gson.fromJson(json, Moneda.class);
+                System.out.println("Al tipo de cambio de hoy: " + miMoneda.getFecha()+ " son: " + miMoneda.getTotal() + " " + monedaYuanChino); 
                 
             } else if (opcion == 6) {
 
@@ -108,7 +124,11 @@ public class Principal {
                 HttpRequest request = HttpRequest.newBuilder().uri(URI.create(direccion)).build();
                 HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
                 String json = response.body();
-                System.out.println("Response: " + json);
+                //System.out.println("Response: " + json);
+                Gson gson = new Gson();                
+                gson.fromJson(json, Moneda.class);  
+                Moneda miMoneda = gson.fromJson(json, Moneda.class);
+                System.out.println("Al tipo de cambio de hoy: " + miMoneda.getFecha()+ " son: " + miMoneda.getTotal() + " " + monedaDolar); 
                 
             } else if (opcion == 7) {
                 System.out.println("Gracias por usar nuestros servicios, hasta proonto");              
