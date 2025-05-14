@@ -140,10 +140,11 @@ public class Principal {
                 }
 
             }
+
         } catch (InputMismatchException e){
             System.out.println("Ocurrio el error: ");
             System.out.println(e.getMessage());
-            System.out.println("Presionaste una letra");
+            System.out.println("Presionaste una letra o pusiste otro caracter diferente a (.) o a un numero");
         }
 
         System.out.println("Finalizo la ejecuccion del programa");
